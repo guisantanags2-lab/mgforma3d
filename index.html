@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MG Forma 3D — Ateliê de impressão 3D</title>
+  <meta name="description" content="MG Forma 3D: decoração e utilidades em impressão 3D. Personalizados exclusivos sob medida. São José do Rio Preto – SP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">MG<em>Forma</em>3D</a>
+    <nav>
+      <a href="#processo">Processo</a>
+      <a href="#acervo">Acervo</a>
+      <a href="#encomenda" class="pill">Encomendar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO: o título é "impresso" camada por camada -->
+    <section class="hero">
+      <p class="label">Ateliê de impressão 3D · São José do Rio Preto – SP</p>
+      <div class="print-bed">
+        <h1 class="printed" aria-label="Ideias que ganham forma.">
+          <span class="ink">Ideias que<br>ganham <em>forma.</em></span>
+          <span class="nozzle" aria-hidden="true"></span>
+        </h1>
+        <div class="bed-line" aria-hidden="true"></div>
+      </div>
+      <div class="hero-foot">
+        <p class="lead">Decoração, utilidades e peças de coleção criadas camada por camada — e personalizadas sob medida para você.</p>
+        <p class="status mono" aria-hidden="true">
+          <span>CAMADA <b id="layer">000</b>/240</span>
+          <span>PLA · 0.12 mm</span>
+          <span id="pct">0%</span>
+        </p>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Casa</span><i>✦</i><span>Escritório</span><i>✦</i><span>Coleção</span><i>✦</i><span>Bustos</span><i>✦</i><span>Presentes</span><i>✦</i><span>Sob medida</span><i>✦</i>
+        <span>Casa</span><i>✦</i><span>Escritório</span><i>✦</i><span>Coleção</span><i>✦</i><span>Bustos</span><i>✦</i><span>Presentes</span><i>✦</i><span>Sob medida</span><i>✦</i>
+      </div>
+    </div>
+
+    <section id="processo" class="process">
+      <h2 class="section-title">Do arquivo à <em>estante</em></h2>
+      <ol>
+        <li class="reveal">
+          <span class="mono step">01 — Ideia</span>
+          <h3>Você conta o que imagina</h3>
+          <p>Um personagem favorito, um presente, um organizador para a mesa. Tudo começa com uma conversa.</p>
+        </li>
+        <li class="reveal">
+          <span class="mono step">02 — Modelagem</span>
+          <h3>A peça ganha medidas</h3>
+          <p>Escala, cor e acabamento definidos para o seu espaço — nada de tamanho único.</p>
+        </li>
+        <li class="reveal">
+          <span class="mono step">03 — Impressão</span>
+          <h3>Camada por camada</h3>
+          <p>Centenas de camadas finíssimas até a peça sair pronta para casa, escritório ou coleção.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="acervo" class="archive">
+      <div class="archive-head">
+        <h2 class="section-title">O <em>acervo</em></h2>
+        <div class="filters" role="tablist" aria-label="Filtrar trabalhos">
+          <button class="active" data-filter="all">Tudo</button>
+          <button data-filter="p">Fotos</button>
+          <button data-filter="reel">Vídeos</button>
+        </div>
+      </div>
+      <p class="archive-note">Peças recentes, direto do Instagram. Coleções em destaque: <em>God of War</em>, <em>Supernatural</em> e <em>Rocky Balboa</em>.</p>
+      <div id="gallery" class="gallery"></div>
+      <p class="more"><a class="link" href="https://www.instagram.com/mgforma3d/" target="_blank" rel="noopener">Ver o acervo completo no Instagram ↗</a></p>
+    </section>
+
+    <section id="encomenda" class="order">
+      <p class="label light">Encomendas abertas</p>
+      <h2>Qual peça <em>ainda não existe</em><br>e deveria estar na sua estante?</h2>
+      <a class="btn" href="https://ig.me/m/mgforma3d" target="_blank" rel="noopener">Conversar no Instagram</a>
+      <p class="mono small">@mgforma3d</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> MG Forma 3D</span>
+    <span class="mono">Feito camada por camada.</span>
+  </footer>
+
+  <script src="posts.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
